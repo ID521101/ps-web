@@ -1,6 +1,15 @@
 # ps-web
 在线ps网页版，添加本地字体库
 
+```
+services:
+  photopea:
+    image: dd995/ps-web:v1.1   
+    container_name: ps-web
+    restart: unless-stopped
+    ports:
+      - "8887:8887"            
+```
 ## 端口号：8887
 
 ## 方案一：
