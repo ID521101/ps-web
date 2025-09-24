@@ -10,6 +10,16 @@ services:
     ports:
       - "8887:8887"            
 ```
+```
+docker run -d \
+  --name ps-web \
+  --restart unless-stopped \
+  -p 28887:8887 \
+  dd995/ps-web:v1.1
+
+```
+
+
 ## 端口号：8887
 
 ## 方案一：
