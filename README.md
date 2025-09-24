@@ -14,8 +14,9 @@ services:
 docker run -d \
   --name ps-web \
   --restart unless-stopped \
-  -p 28887:8887 \
+  -p 127.0.0.1:8887:8887 \
   dd995/ps-web:v1.1
+
 
 ```
 
